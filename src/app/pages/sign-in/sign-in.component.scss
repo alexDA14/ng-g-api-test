@@ -1,0 +1,22 @@
+:host {
+  display: block;
+
+  .sign-in-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .sign-in-card {
+      min-height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      mat-card-actions {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+}
