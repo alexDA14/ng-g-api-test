@@ -1,0 +1,42 @@
+:host {
+  display: block;
+
+  .details-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .details-card {
+      min-height: 300px;
+      min-width: 260px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      mat-card-content {
+        .photo-holder {
+          display: flex;
+          margin: 0 -16px;
+
+          img.user-image {
+            flex-grow: 1;
+          }
+        }
+
+        p {
+          padding: 12px 0;
+
+          strong {
+            font-weight: 500;
+          }
+        }
+      }
+
+      mat-card-actions {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+}
